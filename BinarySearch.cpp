@@ -52,9 +52,20 @@ int BinarySearchRecursion(int arr[],int ele,int low,int high)
     
 }
 int main() {
-    int arr[]= {10, 20, 30, 50, 60, 80, 110, 130, 140, 170};
-    int ele=110;
-    int result=BinarySearchRecursion(arr,5,0,10);
+    int size=0;
+    cout<<"Enter the size of array :";
+    cin>>size;
+    int arr[size];
+    int i=0;
+    while(i<size);
+    {
+        cin>>arr[i];
+        i++;
+    }
+    int ele=0;
+    cout<<"Enter the Element to be search:";
+    cin>>ele;
+    int result=BinarySearchRecursion(arr,ele,0,size);
     cout<<result;
     return 0;
 }
